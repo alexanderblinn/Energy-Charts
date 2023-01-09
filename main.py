@@ -12,7 +12,7 @@ from functions import (
 if __name__ == '__main__':
     # Usage example for the get_power() function.
     power = get_power(
-        country='de', start='2022-01-01T17:00Z', end='2022-01-02T17:00Z'
+        country='de', start='2022-01-01T00:00Z', end='2022-01-02T00:00Z'
         )
 
     # Usage example for the get_installed_power() function.
@@ -22,5 +22,5 @@ if __name__ == '__main__':
 
     # Usage example for the get_price_spot_market() function.
     price_spot_market = get_price_spot_market(
-        bzn='DE-LU', start='2022-01-01T17:00Z', end='2022-01-02T17:00Z'
+        bzn='DE-LU', start='2022-01-01T00:00Z', end='2022-01-02T00:00Z'
         )
