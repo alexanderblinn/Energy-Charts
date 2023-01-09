@@ -22,7 +22,7 @@ README.md for the `energy_charts_api` repository.
     <img src="logo/logo.png" alt="Logo" width="200" height="200">
   </a>
 
-  <h3 align="center">MaStR</h3>
+  <h3 align="center">energy-charts.info</h3>
 
   <p align="center">
     Access the API of the energy-charts.info website.
@@ -128,6 +128,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Project Link: [https://github.com/alexanderblinn/energy_charts_api](https://github.com/alexanderblinn/energy_charts_api)
 
 E-Mail: [alexander.blinn@outlook.de](alexander.blinn@outlook.de)
+
+Note: I am not affiliated with energy-charts.info or the Fraunhofer Institute ISE.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
