@@ -18,7 +18,7 @@ README.md for the `energy_charts_api` repository.
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/alexanderblinn/mastr">
+  <a href="https://github.com/alexanderblinn/energy_charts_api">
     <img src="logo/logo.png" alt="Logo" width="200" height="200">
   </a>
 
@@ -27,14 +27,14 @@ README.md for the `energy_charts_api` repository.
   <p align="center">
     Access the API of the Marktstammdatenregister.
     <br />
-    <a href="https://github.com/alexanderblinn/mastr/blob/main/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/alexanderblinn/energy_charts_api/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/alexanderblinn/mastr/blob/main/README.md">View Demo</a>
+    <a href="https://github.com/alexanderblinn/energy_charts_api/blob/main/README.md">View Demo</a>
     ·
-    <a href="https://github.com/alexanderblinn/mastr/issues">Report Bug</a>
+    <a href="https://github.com/alexanderblinn/energy_charts_api/issues">Report Bug</a>
     ·
-    <a href="https://github.com/alexanderblinn/mastr/issues">Request Feature</a>
+    <a href="https://github.com/alexanderblinn/energy_charts_api/issues">Request Feature</a>
   </p>
 </div>
 
@@ -137,7 +137,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Project Link: [https://github.com/alexanderblinn/mastr](https://github.com/alexanderblinn/mastr)
+Project Link: [https://github.com/alexanderblinn/energy_charts_api](https://github.com/alexanderblinn/energy_charts_api)
 
 E-Mail: [alexander.blinn@outlook.de](alexander.blinn@outlook.de)
 
@@ -148,13 +148,13 @@ E-Mail: [alexander.blinn@outlook.de](alexander.blinn@outlook.de)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/alexanderblinn/mastr.svg?style=for-the-badge
-[contributors-url]: https://github.com/alexanderblinn/mastr/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/alexanderblinn/mastr.svg?style=for-the-badge
-[forks-url]: https://github.com/alexanderblinn/mastr/network/members
-[stars-shield]: https://img.shields.io/github/stars/alexanderblinn/mastr.svg?style=for-the-badge
-[stars-url]: https://github.com/alexanderblinn/mastr/stargazers
-[issues-shield]: https://img.shields.io/github/issues/alexanderblinn/mastr.svg?style=for-the-badge
-[issues-url]: https://github.com/alexanderblinn/mastr/issues
-[license-shield]: https://img.shields.io/github/license/alexanderblinn/mastr.svg?style=for-the-badge
-[license-url]: https://github.com/alexanderblinn/mastr/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/alexanderblinn/energy_charts_api.svg?style=for-the-badge
+[contributors-url]: https://github.com/alexanderblinn/energy_charts_api/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/alexanderblinn/energy_charts_api.svg?style=for-the-badge
+[forks-url]: https://github.com/alexanderblinn/energy_charts_api/network/members
+[stars-shield]: https://img.shields.io/github/stars/alexanderblinn/energy_charts_api.svg?style=for-the-badge
+[stars-url]: https://github.com/alexanderblinn/energy_charts_api/stargazers
+[issues-shield]: https://img.shields.io/github/issues/alexanderblinn/energy_charts_api.svg?style=for-the-badge
+[issues-url]: https://github.com/alexanderblinn/energy_charts_api/issues
+[license-shield]: https://img.shields.io/github/license/alexanderblinn/energy_charts_api.svg?style=for-the-badge
+[license-url]: https://github.com/alexanderblinn/energy_charts_api/blob/main/LICENSE
