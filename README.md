@@ -25,7 +25,7 @@ README.md for the `energy_charts_api` repository.
   <h3 align="center">MaStR</h3>
 
   <p align="center">
-    Access the API of the Marktstammdatenregister.
+    Access the API of the energy-charts.info website.
     <br />
     <a href="https://github.com/alexanderblinn/energy_charts_api/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
@@ -63,9 +63,7 @@ README.md for the `energy_charts_api` repository.
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-The Marktstammdatenregister (MaStR) is an official register of all installed plants and devices in the German energy system and is maintained by the Federal Network Agency (BNetzA).
-
-The Marktstammdatenregister API Web Services provides HTTP interfaces for programmatic data exchange between the Marktstammdatenregister and clients.
+The website energy-charts.info presents interactive graphics on electricity production and exchange electricity prices. The data is compiled by scientists at the Fraunhofer Institute for Solar Energy Systems ISE from various neutral sources. The data is available from 2011.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,17 +73,7 @@ The Marktstammdatenregister API Web Services provides HTTP interfaces for progra
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To use this class, you must first register as a Webdienstnutzer/Marktakteur on the Marktstammdatenregister website:
-    https://test.marktstammdatenregister.de/MaStR
-
-Once you have registered, you will receive a _marktakteurMastrNummer_ and an _apiKey_, which you can use to access the API. To do this, you need to create a new `config.json` file in `./src/` and save both strings as shown below. 
-
-```json
-{
-  "MARKTAKTEUR_MASTR_NUMBER":"YOUR-marktakteurMastrNummer",
-  "API_KEY":"YOUR-apiKey"
-}
-```
+To access the API of the energy-charts.info website, no prior steps (such as registration or similar) are required. No token is needed to download the data.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,9 +84,9 @@ Once you have registered, you will receive a _marktakteurMastrNummer_ and an _ap
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-See `main.py` to learn how to use the MarktstammdatenregisterAPI class.
+See `main.py` to learn how to use the EnergyChartsAPI class.
 
-_For more information, check the official [website](https://www.marktstammdatenregister.de/MaStRHilfe/subpages/webdienst.html) and the official [documentation](https://www.marktstammdatenregister.de/MaStRHilfe/files/webdienst/Funktionen_MaStR_Webdienste_V1.2.87.html)._
+_For more information, check the official [website](https://api.energy-charts.info/)._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
