@@ -51,6 +51,7 @@ def get_installed_power(country: str, time_step: str,
         The code for the country for which data is to be fetched.
     time_step : str
         The time step for the data. Can be 'yearly', or 'monthly'.
+        'monthly' is only available for Germany.
     installation_decomission : bool
         If true, the installation / decomission numbers are returned.
 
