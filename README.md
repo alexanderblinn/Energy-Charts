@@ -84,7 +84,7 @@ To access the API of the energy-charts.info website, no prior steps (such as reg
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-See `main.py` to learn how to use the EnergyChartsAPI class.
+See scripts in `./examples` to learn how to use the EnergyChartsAPI class.
 
 _For more information, check the official [website](https://api.energy-charts.info/)._
 
