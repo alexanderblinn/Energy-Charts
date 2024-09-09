@@ -9,6 +9,7 @@ from src.api_response_processor import make_public_power_df
 if __name__ == "__main__":
     country = "de"
     year = 2024
+    plot = True
 
     api = EnergyChartsAPI()
 
@@ -21,4 +22,11 @@ if __name__ == "__main__":
         power_column_name_dict=api.power_column_dict,
     )
 
-    print(power_df.head())
+    if plot:
+        import plotly_express as px
+        import plotly.io as pio
+        pio.renderers.default = "browser"
+
+        power_df.set_index("timestamp_utc", inplace=True)
+        fig = px.line(power_df, x=power_df.index, y=power_df.columns)
+        fig.show()

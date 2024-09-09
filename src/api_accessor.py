@@ -57,6 +57,8 @@ class EnergyChartsAPI:
     }
 
     power_column_dict = {
+        "Battery Storage (Power)": "battery_storage_power",
+        "Battery Storage (Capacity)": "battery_storage_capacity",
         "Hydro pumped storage consumption": "hydro_pumped_storage_cons",
         "Cross border electricity trading": "cross_border_trading",
         "Import Balance": "import_balance",
@@ -79,6 +81,8 @@ class EnergyChartsAPI:
         "Wind onshore": "wind_onshore",
         "Solar": "solar",
         "Other renewables": "other_renewables",
+        "Other, non-renewable": "other_non_renewable",
+        "Marine": "marine",
         "Load": "load",
         "Fossil oil shale": "fossil_oil_shale",
         "Residual load": "residual_load",
