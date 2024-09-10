@@ -1,33 +1,35 @@
 # -*- coding: utf-8 -*-
 """Functions to process energy-charts API responses for plotting and further analyses."""
 from datetime import datetime
+
 import pandas as pd
 
+from src.globals import POWER_COLUMN_NAME_DICT
 
-def make_public_power_df(public_power_api_response, power_column_name_dict):
+
+def make_power_df(power_api_response) -> pd.DataFrame:
     """
-    Create a pandas DataFrame from the API response for public power data.
+    Create a pandas DataFrame from the API response for public or total power data.
 
-    :param public_power_api_response: return of api call to get_public_power
-    :param power_column_name_dict: maps api response column names to snake_case column names
+    :param power_api_response: return of api call to get_public_power
     :return: power_df (pandas DataFrame) with columns timestamp_utc, and one column per power type
     """
 
-    timestamp = public_power_api_response["unix_seconds"]
+    timestamp = power_api_response["unix_seconds"]
     timestamp = [
         datetime.utcfromtimestamp(dt).strftime("%Y-%m-%d %H:%M:%S") for dt in timestamp
     ]
     power_df = pd.DataFrame({"timestamp_utc": timestamp})
     power_df = _add_production_type_columns(
-        power_df=power_df,
-        api_response=public_power_api_response,
-        power_column_name_dict=power_column_name_dict
+        power_df=power_df, production_types_list=power_api_response["production_types"]
     )
 
     return power_df
 
 
-def make_installed_power_df(installed_power_api_response, time_step, power_column_name_dict):
+def make_installed_power_df(
+    installed_power_api_response: dict[list[float | None]], time_step: str = "yearly"
+) -> pd.DataFrame:
     """
     Create a pandas DataFrame from the API response for installed power data.
 
@@ -48,15 +50,16 @@ def make_installed_power_df(installed_power_api_response, time_step, power_colum
     power_df = pd.DataFrame({time_col_name: timestamp})
     power_df = _add_production_type_columns(
         power_df=power_df,
-        api_response=installed_power_api_response,
-        power_column_name_dict=power_column_name_dict
+        production_types_list=installed_power_api_response["production_types"],
     )
     return power_df
 
 
-def _add_production_type_columns(power_df, api_response, power_column_name_dict):
-    for i in range(len(api_response["production_types"])):
-        _name = api_response["production_types"][i]["name"]
-        _col_name = power_column_name_dict[_name]
-        power_df[_col_name] = api_response["production_types"][i]["data"]
+def _add_production_type_columns(
+    power_df: pd.DataFrame, production_types_list: list[dict]
+) -> pd.DataFrame:
+    for i in range(len(production_types_list)):
+        _name = production_types_list[i]["name"]
+        _col_name = POWER_COLUMN_NAME_DICT[_name]
+        power_df[_col_name] = production_types_list[i]["data"]
     return power_df

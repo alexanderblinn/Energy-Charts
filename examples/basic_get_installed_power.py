@@ -17,16 +17,17 @@ if __name__ == "__main__":
     )
 
     installed_power_df = make_installed_power_df(
-        installed_power_api_response=installed_power,
-        time_step=time_step,
-        power_column_name_dict=api.power_column_dict,
+        installed_power_api_response=installed_power, time_step=time_step
     )
 
     if plot:
-        import plotly_express as px
         import plotly.io as pio
+        import plotly_express as px
+
         pio.renderers.default = "browser"
 
         installed_power_df.set_index("year", inplace=True)
-        fig = px.line(installed_power_df, x=installed_power_df.index, y=installed_power_df.columns)
+        fig = px.line(
+            installed_power_df, x=installed_power_df.index, y=installed_power_df.columns
+        )
         fig.show()
