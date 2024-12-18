@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "Energy-Charts"
+version = "1.1.0"
+description = "Module to access the API of the energy-charts.info website."
+authors = [
+    "Alexander Blinn",
+    "hosenchef"
+    ]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+requests = "^2.32.3"
+pandas = "^2.2.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.4"
+ruff = "^0.8.3"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[tool.pytest.ini_options]
+pythonpath = "app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

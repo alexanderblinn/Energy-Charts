@@ -1,0 +1,39 @@
+{
+    // Python settings
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingImports": "none"
+    },
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/app"
+    ],
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.terminal.activateEnvironment": true,
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python",
+    // Test settings
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.cwd": "${workspaceFolder}/tests",
+    "python.testing.pytestPath": "${workspaceFolder}/.venv/Lib/site-packages/pytest",
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    // Workbench settings
+    "workbench.editor.editorActionsLocation": "default",
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#582961"
+    },
+    "terminal.integrated.profiles.windows": {
+        "Poetry PowerShell": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "args": [
+                "-NoExit",
+                "-Command",
+                "poetry shell"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Poetry PowerShell",
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+    "terminal.integrated.shellIntegration.enabled": false
+}
